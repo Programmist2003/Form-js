@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <div class="page">
+  <h1>Форма связи</h1>
+      <form action="/message" method="post" class="form">
+          <div class="hint">
+              <p>Имя:</p>
+  <input type="text" class="name inp" name="firstName" placeholder="Ваше имя..." required>
+  </div>
+  <div class="hint">
+      <p>Почта:</p>
+  <input type="email" class="gmail inp" name="gmail" placeholder="Ваш адрес електронной почты..." required>
+
+  </div>
+  <div class="hint">
+      <p>Сообщение:</p>
+  <textarea name="message" class="message" required placeholder="Ваше сообщение..."></textarea>
+  </div>
+  <div class="pos-btn"><button type="submit">Отправить</button></div>
+      </form>
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+      *{
+          margin:0;
+          padding:0;
+      }
+      html{
+  font-family: "Montserrat";
+  font-weight: 400;
+      }
+      .footer{
+
+          margin-top: 100px;
+      }
+      .inp{
+
+          width: 250px;
+          font-family:inherit;
+          padding: 5px 15px;
+
+          height: 30px;
+          font-weight: inherit;
+          letter-spacing: 1.3px;
+          border-radius: 0;
+          outline: none;
+
+          border: 0;
+          background-color: rgb(247, 247, 247);
+
+      }
+      .message{
+  resize: none;
+  padding: 12px 15px;
+  width: 250px;
+  letter-spacing: 1.3px;
+  font-weight: inherit;
+
+          font-family:inherit;
+
+          height: 120px;
+          border-radius: 0;
+          outline: none;
+
+          border: 0;
+          background-color: rgb(247, 247, 247);
+      }
+      .pos-btn{
+          width: 100%;
+          top: 50px;
+          position: relative;
+
+          display: flex;
+          justify-content: center;
+      }
+      .pos-btn button{
+          background-color: black;
+          text-transform: uppercase;
+          color: white;
+          min-width: 280px;
+          border: 0;
+          margin: 0px 15px;
+         cursor: pointer;
+          padding: 23px 0px;
+          font-family: inherit;
+      }
+      .hint{
+          margin: 20px;
+      }
+      .hint p{
+          padding: 2px;
+          letter-spacing: 2px;
+          font-size: 14px;
+      }
+      .form{
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+           width: 600px;
+           margin: 80px 0px 0px 0px;
+      }
+      @media (max-width:600px){
+          .form{
+              width:100%;
+              align-items: center;
+          }
+
+      }
+      @media (max-width:325px){
+
+      }
+      .page{
+          margin-top: 50px;
+          width: 100%;
+
+          display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+</style>
+    
+</body>
+</html>
